@@ -170,10 +170,33 @@ form.ltr .check-row{direction:ltr}
 @media(max-width:900px){.hero{grid-template-columns:1fr 150px;padding:24px}.scan-figure{width:120px;height:120px}.content-grid{grid-template-columns:1fr}.rail{display:none}.mobile-select{display:block}.tabs{width:100%}.tab{flex:1;text-align:center;padding:9px 10px}}
 @media(max-width:600px){.topbar{padding:8px 12px}.toolbar{gap:5px}.tool-btn{padding:8px 10px;font-size:.76rem;min-height:36px}.shell{padding:14px 11px 40px}.hero{grid-template-columns:1fr;padding:20px;min-height:auto}.hero-art{display:none}.hero h1{font-size:1.7rem}.stats{grid-template-columns:repeat(3,1fr)}.stat{padding-inline:8px}.stat strong{font-size:1.05rem}.stat span{font-size:.7rem}.lesson-head{padding:20px 16px}.quiz-panel{padding:18px 14px}.tabs{margin-bottom:12px}.tab{font-size:.82rem}.fc-card{min-height:350px}.fc-text{font-size:1.02rem}.fc-actions .primary,.fc-actions .secondary{min-width:110px;flex:1}.index-subject{padding:17px 15px;gap:12px;grid-template-columns:1fr auto}.subject-tag{grid-column:1}.open-link{grid-column:2;grid-row:1/3;font-size:.8rem;padding:9px 11px}.section-heading{align-items:flex-start;flex-direction:column}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+.focusbar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin-top:16px;padding:15px 20px}
+.focusbar strong{font-size:1rem}
+.focusbar p{margin:3px 0 0;font-size:.8rem;color:var(--muted)}
+.focus-controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.focus-controls select{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 12px;min-height:44px;color:var(--text)}
+.midterm-panel{border-inline-start:4px solid var(--amber)}
+.midterm-panel .section-heading h3{color:var(--amber-ink)}
+.midterm-panel summary{color:var(--amber-ink)}
+body.focus-mode{overflow:hidden}
+#focusOverlay{position:fixed;inset:0;z-index:100;background:var(--paper);overflow:auto}
+#focusOverlay[hidden]{display:none}
+.focus-top{position:sticky;top:0;z-index:2;background:var(--ink);color:#eaf5f3;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 22px}
+.focus-top .eyebrow{margin:0 0 4px;color:#9fd8cf}
+.focus-clock{font-size:2rem;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:.02em;line-height:1}
+.focus-progress{position:sticky;top:74px;z-index:2;height:5px;background:rgba(14,27,36,.12)}
+.focus-progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--teal),#7fd8c9)}
+.focus-body{max-width:920px;margin:0 auto;padding:18px 16px 60px}
+.focus-body .lesson-head,.focus-body .quiz-panel{margin-top:16px}
+.focus-done{max-width:640px;margin:56px auto;padding:34px 26px;text-align:center;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.focus-done strong{display:block;font-family:var(--serif);font-size:1.5rem;margin-bottom:8px;color:var(--text)}
+.focus-done p{color:var(--muted);margin:0 0 16px}
+.focus-done .fc-actions{margin-top:6px}
+@media(max-width:600px){.focus-clock{font-size:1.5rem}.focus-top{padding:12px 14px}.focus-progress{top:64px}}
 </style></head><body>
 <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>Study System</span></a><div class="toolbar"><button class="tool-btn" id="languageBtn">English</button></div></header>
 <main class="shell"><section class="hero"><div class="hero-copy"><p class="eyebrow" id="eyebrow">نظام تعلّم مبني على ملفاتك</p><h1 id="title">مكتبة مواد الفصل الأول</h1><p id="intro">اختر مادة لفتح الدروس وكروت المراجعة والاختبارات المرتبطة بالمراجع الأصلية.</p><div class="stats"><div class="stat"><strong>2</strong><span id="subjectsLabel">مواد</span></div><div class="stat"><strong>7</strong><span id="filesLabel">ملفات مصدر</span></div><div class="stat"><strong>22</strong><span id="lessonsLabel">درسًا</span></div></div></div><div class="hero-art" aria-hidden="true"><div class="scan-figure"><span class="scan-ray"></span><span class="scan-core"></span></div></div></section>
-<section class="quiz-panel" style="margin-top:22px;padding:0"><article class="index-subject"><div><h2>تصوير الأوعية</h2><p>Angiography · 4 presentations · 13 lessons</p><span class="subject-chip">كروت مراجعة: 69 كارت</span></div><div class="subject-tag">تقنيات تصوير تداخلي</div><a class="open-link" href="Angiography/angiography.html">افتح المادة <span aria-hidden="true">←</span></a></article><article class="index-subject"><div><h2>فيزياء التصوير المقطعي</h2><p>CT Physics · 1 presentation + 2 PDFs · 9 lessons</p><span class="subject-chip">كروت مراجعة: 42 كارت</span></div><div class="subject-tag">تكوين الأشعة والكواشف</div><a class="open-link" href="CT Physics/ct-physics.html">افتح المادة <span aria-hidden="true">←</span></a></article></section>
+<section class="quiz-panel" style="margin-top:22px;padding:0"><article class="index-subject"><div><h2>تصوير الأوعية</h2><p>Angiography · 4 presentations · 13 lessons</p><span class="subject-chip">كروت مراجعة: 69 كارت</span><span class="subject-chip">بنك ميدترم: 240 سؤال</span></div><div class="subject-tag">تقنيات تصوير تداخلي</div><a class="open-link" href="Angiography/angiography.html">افتح المادة <span aria-hidden="true">←</span></a></article><article class="index-subject"><div><h2>فيزياء التصوير المقطعي</h2><p>CT Physics · 1 presentation + 2 PDFs · 9 lessons</p><span class="subject-chip">كروت مراجعة: 42 كارت</span></div><div class="subject-tag">تكوين الأشعة والكواشف</div><a class="open-link" href="CT Physics/ct-physics.html">افتح المادة <span aria-hidden="true">←</span></a></article></section>
 <section class="import-box"><h3 id="importTitle">ملخص التقدم من ملفات النسخ الاحتياطية</h3><p id="importHint">يمكن استيراد ملفات JSON المُصدّرة من تطبيقات المواد لعرض ملخص التقدم هنا. التقدم محفوظ محليًا داخل كل تطبيق.</p><label class="secondary" for="snapshotFiles" id="snapshotLabel">استيراد ملفات JSON</label><input id="snapshotFiles" type="file" accept="application/json,.json" multiple hidden><div id="importResults" class="import-results"></div></section>
 <div class="notice info" id="offlineNote">التطبيقات تعمل محليًا دون إعداد API خارجي. كل الأسئلة اختيار من متعدد وبالإنجليزية، وتُصحح آليًا — وفي كل مادة وضع كروت مراجعة للاستذكار.</div><div class="notice" id="limitNote">النصوص المستخرجة مرتبطة بملفاتها. ملفات PowerPoint القديمة تعرض كتلًا نصية دون رقم شريحة، وقد لا تظهر الرسوم أو النص داخل الصور.</div><p class="footer">Original materials were copied into their subject folders. Source files in F:\Radiology remain unchanged.</p></main>
 <script>

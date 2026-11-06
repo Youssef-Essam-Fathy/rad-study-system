@@ -13,6 +13,11 @@ Flashcards review mode
 - Cards you mark as known are tracked locally in a separate storage key; the "Not known yet" deck shows only the rest.
 - Card progress stays in the browser and is not part of the lesson progress JSON export.
 
+Midterm bank and focus mode
+- The Angiography app embeds the real midterm question bank (240 multiple-choice and true/false items from the user's PDF) distributed across the 13 lessons.
+- Each lesson has a collapsed "Midterm question bank" section intended for self-testing after studying the lesson.
+- Focus mode lets the student pick a duration (10-60 minutes) and study one lesson behind a full-screen timer; the timer persists across page reloads and cannot be dismissed until it finishes.
+
 Accuracy and grading limits
 - Lessons are presented in Arabic; every assessment question, option, answer explanation, and feedback label is in English.
 - All assessment items are multiple-choice questions and are objectively auto-graded. There is no essay or semantic-answer grading.
