@@ -8,6 +8,11 @@ Subjects detected from file contents
 
 Each subject folder contains an HTML app, source visuals, and copies of its original source files. Originals on F: were not edited or moved. Progress is stored in browser local storage and can be exported/imported as JSON.
 
+Flashcards review mode
+- Every lesson ships curated Egyptian-Arabic review cards plus one card per lesson multiple-choice question.
+- Cards you mark as known are tracked locally in a separate storage key; the "Not known yet" deck shows only the rest.
+- Card progress stays in the browser and is not part of the lesson progress JSON export.
+
 Accuracy and grading limits
 - Lessons are presented in Arabic; every assessment question, option, answer explanation, and feedback label is in English.
 - All assessment items are multiple-choice questions and are objectively auto-graded. There is no essay or semantic-answer grading.

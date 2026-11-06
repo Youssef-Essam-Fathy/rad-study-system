@@ -1,18 +1,183 @@
 <!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Study System — مكتبة المواد</title><style>
-:root{--ink:#16232d;--ink2:#22343f;--paper:#edf3f3;--white:#fbfdfc;--line:#d6e0df;--muted:#62727a;--teal:#2f9d96;--teal2:#b7e3db;--amber:#efb657;--red:#bd5748;--good:#287d61;--shadow:0 18px 50px rgba(9,25,33,.09);--serif:Georgia,'Times New Roman',serif;--sans:'Aptos','Segoe UI','Noto Sans Arabic',Tahoma,system-ui,sans-serif}
-*{box-sizing:border-box}html{background:var(--paper);color:var(--ink);font-family:var(--sans)}body{margin:0;min-height:100vh;background:var(--paper)}button,input,textarea{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--amber);outline-offset:3px}a{color:inherit}.topbar{height:68px;background:var(--ink);color:#f7fbfa;display:flex;align-items:center;justify-content:space-between;padding:0 max(20px,calc((100vw - 1440px)/2));position:sticky;top:0;z-index:10}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:700;letter-spacing:.01em}.brand-mark{width:30px;height:30px;border:1px solid #65c2b5;border-radius:50%;position:relative;display:inline-block}.brand-mark:before,.brand-mark:after{content:'';position:absolute;background:#65c2b5}.brand-mark:before{width:1px;height:22px;top:3px;left:14px}.brand-mark:after{height:1px;width:22px;top:14px;left:3px}.toolbar{display:flex;gap:8px;align-items:center}.tool-btn{border:1px solid rgba(255,255,255,.23);color:#f7fbfa;background:transparent;border-radius:7px;padding:9px 13px;font-size:.88rem}.tool-btn:hover{background:rgba(255,255,255,.1)}.shell{max-width:1440px;margin:0 auto;padding:28px 24px 60px}.hero{background:var(--ink);color:#edf7f5;min-height:210px;border-radius:5px;display:grid;grid-template-columns:minmax(0,1fr) 270px;align-items:center;gap:28px;padding:30px 42px;position:relative;overflow:hidden}.hero:after{content:'';position:absolute;right:100px;top:-105px;width:360px;height:360px;border:1px solid rgba(93,191,177,.32);border-radius:50%;box-shadow:0 0 0 28px rgba(93,191,177,.05),0 0 0 62px rgba(93,191,177,.04),0 0 0 96px rgba(93,191,177,.025)}[dir=rtl] .hero:after{right:auto;left:100px}.hero-copy{position:relative;z-index:1;max-width:760px}.eyebrow{color:var(--teal2);font-size:.82rem;letter-spacing:.08em;margin:0 0 11px}.hero h1{font-family:var(--serif);font-size:clamp(2rem,4vw,3rem);line-height:1.08;max-width:18ch;margin:0 0 12px;font-weight:500}.hero p{color:#cfdddc;line-height:1.6;max-width:66ch;margin:0}.hero-art{position:relative;z-index:1;display:flex;justify-content:center}.scan-figure{width:170px;height:170px;border-radius:50%;border:1px solid rgba(108,204,191,.65);display:grid;place-items:center;position:relative;background:radial-gradient(circle,rgba(57,155,146,.14) 0 30%,transparent 31%)}.scan-figure:before,.scan-figure:after{content:'';position:absolute;border-radius:50%;border:1px dashed rgba(190,229,222,.55)}.scan-figure:before{inset:17px}.scan-figure:after{inset:40px}.scan-core{width:31px;height:31px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 10px rgba(239,182,87,.16)}.scan-ray{position:absolute;width:1px;height:70px;background:linear-gradient(transparent,var(--teal2),transparent);transform-origin:bottom;bottom:50%;left:50%;transform:rotate(45deg)}.stats{display:grid;grid-template-columns:repeat(3,minmax(110px,1fr));gap:0;max-width:610px;margin-top:20px;border-top:1px solid rgba(255,255,255,.17);padding-top:14px}.stat{padding-inline:18px;border-inline-start:1px solid rgba(255,255,255,.16)}.stat:first-child{padding-inline-start:0;border:0}.stat strong{display:block;font-size:1.4rem;font-weight:600;color:#fff}.stat span{color:#b8c8c8;font-size:.82rem}.content-grid{display:grid;grid-template-columns:minmax(255px,310px) minmax(0,1fr);gap:22px;margin-top:22px;align-items:start}.rail{background:#e3eceb;border:1px solid var(--line);padding:17px 14px;position:sticky;top:86px;max-height:calc(100vh - 104px);overflow:auto}.rail-title{font-size:.83rem;color:var(--muted);margin:0 8px 12px}.lesson-link{width:100%;border:0;background:transparent;text-align:inherit;display:flex;gap:12px;align-items:flex-start;padding:11px 9px;border-radius:4px;color:var(--ink);line-height:1.35}.lesson-link:hover{background:#d6e4e3}.lesson-link.active{background:var(--ink);color:#fff}.lesson-num{font-variant-numeric:tabular-nums;font-size:.78rem;color:var(--teal);min-width:22px;padding-top:1px}.lesson-link.active .lesson-num{color:var(--amber)}.lesson-name{font-size:.9rem;flex:1}.lesson-state{font-size:.7rem;color:var(--muted);white-space:nowrap}.lesson-link.active .lesson-state{color:#c9d7d7}.main-panel{min-width:0}.lesson-head{background:var(--white);padding:27px 31px 24px;border:1px solid var(--line);box-shadow:var(--shadow)}.lesson-kicker{font-size:.8rem;color:var(--teal);margin:0 0 8px}.lesson-head h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.65rem,3vw,2.25rem);margin:0 0 12px;line-height:1.18}.summary{font-size:1.03rem;line-height:1.75;max-width:76ch;margin:0;color:#334750}.objectives{display:flex;flex-wrap:wrap;gap:8px;margin-top:17px}.objective{border:1px solid #d7e6e3;background:#f1f8f6;color:#2c5e59;padding:7px 10px;font-size:.82rem;border-radius:2px}.evidence-wrap{margin-top:16px}.evidence-wrap summary{cursor:pointer;color:#306a65;font-weight:600;font-size:.9rem;padding:7px 0}.evidence{background:#f0f5f5;border-inline-start:3px solid var(--teal);padding:12px 14px;margin:9px 0;line-height:1.6}.evidence cite{display:block;color:var(--muted);font-size:.76rem;font-style:normal;margin-bottom:5px}.evidence p{margin:0;max-width:90ch;font-size:.9rem;direction:ltr;text-align:left}.quiz-panel{background:var(--white);border:1px solid var(--line);margin-top:18px;padding:24px 30px;box-shadow:var(--shadow)}.section-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:5px}.section-heading h3{font-size:1.22rem;margin:0}.section-heading p{font-size:.8rem;color:var(--muted);margin:0}.question{padding:18px 0;border-bottom:1px solid #e6eded}.question:last-of-type{border:0}.q-meta{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:.75rem;margin-bottom:8px}.q-type{border-radius:2px;padding:3px 7px;background:#e7f3f0;color:#27756c}.question h4{margin:0 0 11px;font-size:1rem;line-height:1.5}.options{display:grid;gap:7px}.option{display:flex;align-items:flex-start;gap:9px;padding:8px 10px;border:1px solid #e0e9e8;border-radius:3px;line-height:1.45}.option:hover{background:#f4f9f8}.option input{accent-color:var(--teal);margin-top:4px}.answer-input,.essay-input{width:100%;border:1px solid #cbd8d7;border-radius:3px;padding:10px 12px;background:#fff;min-height:44px;color:var(--ink)}.essay-input{min-height:105px;resize:vertical}.feedback{margin-top:8px;padding:10px 12px;border-inline-start:3px solid var(--teal);background:#edf7f4;font-size:.88rem;line-height:1.55}.feedback.wrong{border-color:var(--red);background:#fbefec}.feedback small{display:block;color:var(--muted);margin-top:4px}.check-row{display:flex;align-items:center;gap:12px;margin-top:18px;flex-wrap:wrap}.primary{border:0;background:var(--teal);color:#fff;border-radius:3px;padding:10px 16px;font-weight:650}.primary:hover{background:#237f79}.secondary{border:1px solid var(--line);background:#fff;color:var(--ink);padding:9px 13px;border-radius:3px}.score{color:var(--good);font-weight:700}.score.low{color:var(--red)}.progressline{display:flex;align-items:center;gap:12px;margin-top:15px}.progressbar{height:7px;background:#dbe5e4;flex:1;position:relative}.progressbar span{display:block;height:100%;background:var(--teal);width:0}.progressline small{color:var(--muted);white-space:nowrap}.notice{background:#fff7e7;border:1px solid #f3dfb7;color:#755c2d;padding:12px 14px;line-height:1.5;margin-top:18px;font-size:.86rem}.notice.info{background:#eaf4f3;border-color:#d2e5e2;color:#325a57}.footer{margin-top:20px;color:var(--muted);font-size:.8rem;line-height:1.5}.file-list{display:grid;gap:6px;margin-top:8px}.file-link{font-size:.84rem;color:#2f6c68}.empty{padding:30px;background:var(--white);border:1px solid var(--line);color:var(--muted)}.index-subject{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(170px,.7fr) auto;align-items:center;gap:20px;padding:22px 24px;border-top:1px solid var(--line);background:var(--white)}.index-subject:first-child{border-top:0}.index-subject h2{font-family:var(--serif);font-weight:500;margin:0 0 4px;font-size:1.5rem}.index-subject p{margin:0;color:var(--muted);font-size:.88rem}.subject-tag{font-size:.83rem;color:#42716d}.open-link{display:inline-flex;align-items:center;text-decoration:none;background:var(--ink);color:#fff;padding:10px 14px;border-radius:3px;font-size:.88rem;white-space:nowrap}.open-link:hover{background:var(--teal)}.import-box{background:#f7fbfa;border:1px solid var(--line);padding:18px 20px;margin-top:18px}.import-box h3{margin:0 0 5px}.import-box p{color:var(--muted);font-size:.86rem;line-height:1.5}.import-results{display:grid;gap:8px;margin-top:12px}.import-item{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:8px 0;font-size:.88rem}.mobile-select{display:none;width:100%;padding:10px;border:1px solid var(--line);background:#fff;border-radius:3px;color:var(--ink)}
-.source-visuals{margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}.source-visuals h3{font-size:1rem;margin:0 0 11px;color:#254a51}.visual-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.source-visual{margin:0;background:#edf3f2;border:1px solid #d5e0de}.source-visual img{display:block;width:100%;max-height:300px;object-fit:contain;background:#fff}.source-visual figcaption{padding:7px 9px;color:var(--muted);font-size:.74rem;direction:ltr;text-align:left}.egyptian-note{margin-top:10px;padding:10px 12px;background:#fffdf7;border:1px solid #e9d6a8;border-inline-start:3px solid var(--amber);color:#3f3530;direction:rtl;text-align:right}.egyptian-note strong{display:block;color:#8a5d18;font-size:.75rem;letter-spacing:.02em;margin-bottom:4px}.evidence .egyptian-note p{direction:rtl;text-align:right;font-size:.9rem;line-height:1.7}.quiz-panel{direction:ltr;text-align:left}.quiz-panel .section-heading{direction:ltr}.quiz-panel .question{direction:ltr}.quiz-panel .option{direction:ltr}.quiz-panel .check-row{direction:ltr}
-@media(max-width:900px){.hero{grid-template-columns:1fr 150px;padding:26px}.scan-figure{width:130px;height:130px}.content-grid{grid-template-columns:1fr}.rail{display:none}.mobile-select{display:block;margin:0 0 14px}.index-subject{grid-template-columns:1fr auto}.subject-tag{grid-column:1}.open-link{grid-column:2;grid-row:1/3}}
-@media(max-width:600px){.topbar{height:auto;min-height:58px;padding:10px 14px}.toolbar{gap:5px}.tool-btn{padding:8px 9px;font-size:.78rem}.shell{padding:16px 12px 38px}.hero{grid-template-columns:1fr;padding:22px;min-height:auto}.hero-art{display:none}.hero h1{font-size:2rem}.stats{grid-template-columns:repeat(3,1fr)}.stat{padding-inline:9px}.stat strong{font-size:1.1rem}.stat span{font-size:.72rem}.lesson-head,.quiz-panel{padding:19px 16px}.index-subject{padding:17px 15px;gap:12px}.index-subject h2{font-size:1.25rem}.open-link{font-size:.8rem;padding:9px 10px}.section-heading{align-items:flex-start;flex-direction:column}}
+:root{
+--ink:#0e1b24;--ink2:#16293a;--paper:#eef3f4;--card:#ffffff;--line:#dbe4e7;--line2:#e7eef0;
+--muted:#5d7280;--text:#1b2a35;--text2:#3a5160;
+--teal:#0f9187;--teal-strong:#0a756c;--teal-soft:#dff2ef;--teal-softer:#f2faf8;
+--amber:#eea236;--amber-soft:#fcf2dd;--amber-ink:#8a5d18;
+--red:#cf5c4a;--red-soft:#faecea;--good:#1e8a63;
+--teal-glow:rgba(93,191,177,.32);
+--radius:16px;--radius-sm:11px;
+--shadow:0 12px 34px rgba(14,27,36,.08);--shadow-sm:0 3px 12px rgba(14,27,36,.06);
+--serif:Georgia,'Times New Roman',serif;--sans:'Aptos','Segoe UI','Noto Sans Arabic',Tahoma,system-ui,sans-serif
+}
+*{box-sizing:border-box}
+html{background:var(--paper);color:var(--text);font-family:var(--sans)}
+body{margin:0;min-height:100vh;background:var(--paper);-webkit-font-smoothing:antialiased}
+button,input,textarea,select{font:inherit}
+button{cursor:pointer}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+a{color:inherit}
+img{max-width:100%}
+.topbar{min-height:64px;background:var(--ink);color:#f2f9f8;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px max(16px,calc((100vw - 1280px)/2));position:sticky;top:0;z-index:20;box-shadow:0 2px 14px rgba(14,27,36,.25)}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:700;letter-spacing:.01em;font-size:1rem}
+.brand-mark{width:28px;height:28px;border:1.5px solid #5fc4b6;border-radius:50%;position:relative;display:inline-block;flex:none}
+.brand-mark:before,.brand-mark:after{content:'';position:absolute;background:#5fc4b6}
+.brand-mark:before{width:1.5px;height:20px;top:3px;left:12.5px}
+.brand-mark:after{height:1.5px;width:20px;top:12.5px;left:3px}
+.toolbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.tool-btn{border:1px solid rgba(255,255,255,.22);color:#f2f9f8;background:transparent;border-radius:999px;padding:8px 14px;font-size:.86rem;text-decoration:none;min-height:38px;display:inline-flex;align-items:center}
+.tool-btn:hover{background:rgba(255,255,255,.12)}
+.shell{max-width:1280px;margin:0 auto;padding:22px 20px 60px}
+.hero{background:linear-gradient(135deg,var(--ink) 0%,var(--ink2) 100%);color:#eaf5f3;min-height:190px;border-radius:22px;display:grid;grid-template-columns:minmax(0,1fr) 240px;align-items:center;gap:24px;padding:28px 36px;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.hero:after{content:'';position:absolute;inset-inline-end:90px;top:-110px;width:340px;height:340px;border:1px solid var(--teal-glow);border-radius:50%;box-shadow:0 0 0 30px rgba(93,191,177,.05),0 0 0 66px rgba(93,191,177,.035),0 0 0 104px rgba(93,191,177,.02)}
+.hero-copy{position:relative;z-index:1;max-width:780px}
+.eyebrow{color:#9fd8cf;font-size:.8rem;letter-spacing:.09em;margin:0 0 10px}
+.hero h1{font-family:var(--serif);font-size:clamp(1.9rem,3.6vw,2.7rem);line-height:1.12;max-width:20ch;margin:0 0 10px;font-weight:600}
+.hero p{color:#c3d6d4;line-height:1.65;max-width:64ch;margin:0}
+.hero-art{position:relative;z-index:1;display:flex;justify-content:center}
+.scan-figure{width:150px;height:150px;border-radius:50%;border:1px solid rgba(108,204,191,.6);display:grid;place-items:center;position:relative;background:radial-gradient(circle,rgba(57,155,146,.16) 0 30%,transparent 31%)}
+.scan-figure:before,.scan-figure:after{content:'';position:absolute;border-radius:50%;border:1px dashed rgba(190,229,222,.5)}
+.scan-figure:before{inset:16px}
+.scan-figure:after{inset:38px}
+.scan-core{width:28px;height:28px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 9px rgba(238,162,54,.16)}
+.scan-ray{position:absolute;width:1px;height:64px;background:linear-gradient(transparent,#bfe6de,transparent);transform-origin:bottom;bottom:50%;left:50%;transform:rotate(45deg)}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(96px,1fr));gap:0;max-width:560px;margin-top:18px;border-top:1px solid rgba(255,255,255,.16);padding-top:12px}
+.stat{padding-inline:16px;border-inline-start:1px solid rgba(255,255,255,.14)}
+.stat:first-child{padding-inline-start:0;border:0}
+.stat strong{display:block;font-size:1.35rem;font-weight:700;color:#fff}
+.stat span{color:#a9c0c0;font-size:.8rem}
+.progressline{display:flex;align-items:center;gap:12px;margin-top:16px;max-width:560px}
+.progressbar{height:8px;background:rgba(255,255,255,.18);flex:1;position:relative;border-radius:999px;overflow:hidden}
+.progressbar span{display:block;height:100%;background:linear-gradient(90deg,#2fb3a6,#7fd8c9);width:0;transition:width .4s}
+.progressline small{color:#a9c0c0;white-space:nowrap}
+.content-grid{display:grid;grid-template-columns:minmax(250px,300px) minmax(0,1fr);gap:20px;margin-top:20px;align-items:start}
+.rail{background:var(--card);border:1px solid var(--line);padding:14px 10px;position:sticky;top:84px;max-height:calc(100vh - 102px);overflow:auto;border-radius:var(--radius);box-shadow:var(--shadow-sm)}
+.rail-title{font-size:.78rem;color:var(--muted);margin:4px 10px 10px;font-weight:600;letter-spacing:.04em}
+.lesson-link{width:100%;border:0;background:transparent;text-align:inherit;display:flex;gap:10px;align-items:flex-start;padding:11px 10px;border-radius:var(--radius-sm);color:var(--text);line-height:1.4;transition:background .15s}
+.lesson-link:hover{background:var(--teal-softer)}
+.lesson-link.active{background:var(--ink);color:#fff}
+.lesson-num{font-variant-numeric:tabular-nums;font-size:.76rem;color:var(--teal-strong);min-width:22px;padding-top:2px;font-weight:700}
+.lesson-link.active .lesson-num{color:var(--amber)}
+.lesson-name{font-size:.89rem;flex:1}
+.lesson-state{font-size:.68rem;color:var(--muted);white-space:nowrap;padding-top:2px}
+.lesson-link.active .lesson-state{color:#b9cdc9}
+.main-panel{min-width:0}
+.mobile-select{display:none;width:100%;padding:11px 12px;border:1px solid var(--line);background:var(--card);border-radius:var(--radius-sm);color:var(--text);margin-bottom:12px}
+.tabs{display:flex;gap:6px;background:#e2eaec;border:1px solid var(--line);padding:5px;border-radius:999px;margin-bottom:16px;width:max-content;max-width:100%;overflow-x:auto}
+.tab{border:0;background:transparent;color:var(--text2);padding:9px 18px;border-radius:999px;font-size:.9rem;font-weight:600;min-height:40px;white-space:nowrap;transition:background .15s,color .15s}
+.tab:hover{color:var(--text)}
+.tab.active{background:var(--ink);color:#fff;box-shadow:var(--shadow-sm)}
+.lesson-head{background:var(--card);padding:26px 30px 24px;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.lesson-kicker{font-size:.78rem;color:var(--teal-strong);margin:0 0 8px;font-weight:700;letter-spacing:.05em}
+.lesson-head h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.5rem,2.8vw,2.05rem);margin:0 0 12px;line-height:1.2}
+.summary{font-size:1rem;line-height:1.8;max-width:76ch;margin:0;color:var(--text2)}
+.objectives{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;align-items:center}
+.objectives strong{font-size:.85rem;color:var(--muted);font-weight:600;margin-inline-end:4px}
+.objective{border:1px solid #cfe6e1;background:var(--teal-softer);color:#20574f;padding:7px 12px;font-size:.82rem;border-radius:999px}
+.evidence-wrap{margin-top:18px}
+.evidence-wrap summary{cursor:pointer;color:var(--teal-strong);font-weight:600;font-size:.9rem;padding:8px 0}
+.evidence{background:var(--teal-softer);border:1px solid #d3e8e3;border-inline-start:4px solid var(--teal);padding:13px 15px;margin:10px 0;line-height:1.65;border-radius:var(--radius-sm)}
+.evidence cite{display:block;color:var(--muted);font-size:.74rem;font-style:normal;margin-bottom:6px;direction:ltr;text-align:left}
+.evidence>p{margin:0;max-width:90ch;font-size:.9rem;direction:ltr;text-align:left}
+.egyptian-note{margin-top:12px;padding:11px 13px;background:var(--amber-soft);border:1px solid #ecd9ac;border-inline-start:4px solid var(--amber);color:#41372c;direction:rtl;text-align:right;border-radius:9px}
+.egyptian-note strong{display:block;color:var(--amber-ink);font-size:.74rem;letter-spacing:.02em;margin-bottom:4px}
+.egyptian-note p{direction:rtl;text-align:right;font-size:.92rem;line-height:1.75;margin:0}
+.quiz-panel{background:var(--card);border:1px solid var(--line);margin-top:16px;padding:24px 28px;box-shadow:var(--shadow);border-radius:var(--radius)}
+.section-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:6px;flex-wrap:wrap}
+.section-heading h3{font-size:1.18rem;margin:0}
+.section-heading p{font-size:.8rem;color:var(--muted);margin:0}
+form.ltr,form.ltr .question,form.ltr .option{direction:ltr;text-align:left}
+form.ltr .check-row{direction:ltr}
+.question{padding:18px 0;border-bottom:1px solid var(--line2)}
+.question:last-of-type{border:0}
+.q-meta{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:.74rem;margin-bottom:9px;flex-wrap:wrap}
+.q-type{border-radius:999px;padding:3px 9px;background:var(--teal-soft);color:var(--teal-strong);font-weight:600}
+.question h4{margin:0 0 12px;font-size:1rem;line-height:1.55}
+.options{display:grid;gap:8px}
+.option{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;border:1px solid var(--line);border-radius:var(--radius-sm);line-height:1.5;transition:background .15s,border-color .15s}
+.option:hover{background:var(--teal-softer);border-color:#c8ded9}
+.option input{accent-color:var(--teal);margin-top:4px;width:16px;height:16px}
+.answer-input,.essay-input{width:100%;border:1px solid #ccd9dc;border-radius:var(--radius-sm);padding:11px 13px;background:#fff;min-height:46px;color:var(--text)}
+.essay-input{min-height:105px;resize:vertical}
+.feedback{margin-top:10px;padding:11px 13px;border-inline-start:4px solid var(--teal);background:var(--teal-softer);font-size:.88rem;line-height:1.6;border-radius:9px}
+.feedback.wrong{border-color:var(--red);background:var(--red-soft)}
+.feedback small{display:block;color:var(--muted);margin-top:5px}
+.check-row{display:flex;align-items:center;gap:12px;margin-top:18px;flex-wrap:wrap}
+.primary{border:0;background:var(--teal);color:#fff;border-radius:999px;padding:11px 20px;font-weight:700;min-height:44px;transition:background .15s}
+.primary:hover{background:var(--teal-strong)}
+.secondary{border:1px solid var(--line);background:#fff;color:var(--text);padding:10px 15px;border-radius:999px;min-height:44px;transition:background .15s}
+.secondary:hover{background:var(--paper)}
+.secondary:disabled{opacity:.45;cursor:default}
+.score{color:var(--good);font-weight:700}
+.score.low{color:var(--red)}
+.notice{background:var(--amber-soft);border:1px solid #eedaa8;color:#7a5f2b;padding:12px 15px;line-height:1.55;margin-top:16px;font-size:.85rem;border-radius:var(--radius-sm)}
+.notice.info{background:var(--teal-softer);border-color:#cfe4df;color:#335a54}
+.footer{margin-top:18px;color:var(--muted);font-size:.8rem;line-height:1.6}
+.empty{padding:26px;background:var(--card);border:1px solid var(--line);color:var(--muted);border-radius:var(--radius-sm)}
+.source-visuals{margin-top:20px;padding-top:16px;border-top:1px solid var(--line)}
+.source-visuals h3{font-size:1rem;margin:0 0 11px;color:#274b51}
+.visual-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.source-visual{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden}
+.source-visual img{display:block;width:100%;max-height:300px;object-fit:contain;background:#fff}
+.source-visual figcaption{padding:8px 10px;color:var(--muted);font-size:.72rem;direction:ltr;text-align:left}
+.source-visual.img-missing{min-height:120px}
+.source-visual.img-missing figcaption:after{content:' — image unavailable';color:var(--red)}
+.file-list{display:grid;gap:6px;margin-top:8px}
+.file-link{font-size:.84rem;color:#2c6b66}
+.index-subject{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(170px,.7fr) auto;align-items:center;gap:20px;padding:22px 26px}
+.index-subject+.index-subject{border-top:1px solid var(--line2)}
+.index-subject h2{font-family:var(--serif);font-weight:600;margin:0 0 4px;font-size:1.45rem}
+.index-subject p{margin:0;color:var(--muted);font-size:.87rem}
+.subject-tag{font-size:.82rem;color:#3f6f6a}
+.subject-chip{display:inline-block;margin-top:8px;font-size:.72rem;background:var(--teal-soft);color:var(--teal-strong);padding:4px 10px;border-radius:999px;font-weight:600}
+.open-link{display:inline-flex;align-items:center;text-decoration:none;background:var(--ink);color:#fff;padding:11px 16px;border-radius:999px;font-size:.88rem;white-space:nowrap;font-weight:600;transition:background .15s}
+.open-link:hover{background:var(--teal)}
+.import-box{background:var(--card);border:1px solid var(--line);padding:18px 22px;margin-top:18px;border-radius:var(--radius);box-shadow:var(--shadow-sm)}
+.import-box h3{margin:0 0 5px}
+.import-box p{color:var(--muted);font-size:.86rem;line-height:1.55}
+.import-results{display:grid;gap:8px;margin-top:12px}
+.import-item{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:8px 0;font-size:.88rem}
+.fc-head{display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:14px;flex-wrap:wrap}
+.fc-head h3{margin:0;font-size:1.18rem}
+.fc-head p{margin:0;font-size:.8rem;color:var(--muted)}
+.fc-controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.fc-controls select{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 12px;min-height:42px;color:var(--text)}
+.fc-stage{perspective:1400px;margin:6px 0 14px}
+.fc-card{position:relative;width:100%;min-height:320px;cursor:pointer;transform-style:preserve-3d;transition:transform .45s cubic-bezier(.2,.7,.3,1)}
+.fc-card.flipped{transform:rotateY(180deg)}
+.fc-face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:26px 24px;text-align:center;overflow:auto}
+.fc-front{background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow)}
+.fc-back{background:linear-gradient(135deg,var(--ink),var(--ink2));color:#ecf6f4;transform:rotateY(180deg);border:1px solid var(--ink2)}
+.fc-tag{font-size:.72rem;font-weight:700;letter-spacing:.06em;border-radius:999px;padding:4px 12px;background:var(--teal-soft);color:var(--teal-strong);position:absolute;top:16px;inset-inline-start:16px}
+.fc-back .fc-tag{background:rgba(255,255,255,.14);color:#bfe3da}
+.fc-text{font-size:1.12rem;line-height:1.7;max-width:56ch}
+.fc-front .fc-text{font-weight:600;color:var(--text)}
+.fc-back .fc-text{color:#f0f9f7}
+.fc-hint{margin:0;font-size:.76rem;color:var(--muted);position:absolute;bottom:12px;inset-inline-start:0;inset-inline-end:0;text-align:center}
+.fc-back .fc-hint{color:#9fc4bc}
+.fc-lesson{font-size:.74rem;color:var(--muted);text-align:center;margin:8px 0 0}
+.fc-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:4px}
+.fc-actions .primary,.fc-actions .secondary{min-width:132px}
+.fc-nav{display:flex;gap:8px;align-items:center;justify-content:center;margin-top:12px;flex-wrap:wrap}
+.fc-nav .secondary{min-width:44px;padding-inline:14px}
+.fc-counter{font-size:.84rem;color:var(--muted);font-variant-numeric:tabular-nums;min-width:74px;text-align:center}
+.fc-progressline{display:flex;align-items:center;gap:10px;margin-top:14px}
+.fc-progressline .progressbar{background:var(--line2)}
+.fc-progressline .progressbar span{background:linear-gradient(90deg,var(--teal),#63c6b8)}
+.fc-progressline small{color:var(--muted);white-space:nowrap}
+.fc-empty,.fc-done{text-align:center;padding:38px 18px;color:var(--muted)}
+.fc-done strong{display:block;font-size:1.3rem;color:var(--text);margin-bottom:8px;font-family:var(--serif)}
+@media(max-width:900px){.hero{grid-template-columns:1fr 150px;padding:24px}.scan-figure{width:120px;height:120px}.content-grid{grid-template-columns:1fr}.rail{display:none}.mobile-select{display:block}.tabs{width:100%}.tab{flex:1;text-align:center;padding:9px 10px}}
+@media(max-width:600px){.topbar{padding:8px 12px}.toolbar{gap:5px}.tool-btn{padding:8px 10px;font-size:.76rem;min-height:36px}.shell{padding:14px 11px 40px}.hero{grid-template-columns:1fr;padding:20px;min-height:auto}.hero-art{display:none}.hero h1{font-size:1.7rem}.stats{grid-template-columns:repeat(3,1fr)}.stat{padding-inline:8px}.stat strong{font-size:1.05rem}.stat span{font-size:.7rem}.lesson-head{padding:20px 16px}.quiz-panel{padding:18px 14px}.tabs{margin-bottom:12px}.tab{font-size:.82rem}.fc-card{min-height:350px}.fc-text{font-size:1.02rem}.fc-actions .primary,.fc-actions .secondary{min-width:110px;flex:1}.index-subject{padding:17px 15px;gap:12px;grid-template-columns:1fr auto}.subject-tag{grid-column:1}.open-link{grid-column:2;grid-row:1/3;font-size:.8rem;padding:9px 11px}.section-heading{align-items:flex-start;flex-direction:column}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 </style></head><body>
 <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>Study System</span></a><div class="toolbar"><button class="tool-btn" id="languageBtn">English</button></div></header>
-<main class="shell"><section class="hero"><div class="hero-copy"><p class="eyebrow" id="eyebrow">نظام تعلّم مبني على ملفاتك</p><h1 id="title">مكتبة مواد الفصل الأول</h1><p id="intro">اختر مادة لفتح الدروس والمقتطفات والاختبارات المرتبطة بالمراجع الأصلية.</p><div class="stats"><div class="stat"><strong>2</strong><span id="subjectsLabel">مواد</span></div><div class="stat"><strong>7</strong><span id="filesLabel">ملفات مصدر</span></div><div class="stat"><strong>22</strong><span id="lessonsLabel">درسًا</span></div></div></div><div class="hero-art" aria-hidden="true"><div class="scan-figure"><span class="scan-ray"></span><span class="scan-core"></span></div></div></section>
-<section class="quiz-panel" style="margin-top:22px;padding:0"><article class="index-subject"><div><h2>تصوير الأوعية</h2><p>Angiography · 4 presentations · 13 lessons</p></div><div class="subject-tag">تقنيات تصوير تداخلي</div><a class="open-link" href="Angiography/angiography.html">افتح المادة <span aria-hidden="true">←</span></a></article><article class="index-subject"><div><h2>فيزياء التصوير المقطعي</h2><p>CT Physics · 1 presentation + 2 PDFs · 9 lessons</p></div><div class="subject-tag">تكوين الأشعة والكواشف</div><a class="open-link" href="CT Physics/ct-physics.html">افتح المادة <span aria-hidden="true">←</span></a></article></section>
+<main class="shell"><section class="hero"><div class="hero-copy"><p class="eyebrow" id="eyebrow">نظام تعلّم مبني على ملفاتك</p><h1 id="title">مكتبة مواد الفصل الأول</h1><p id="intro">اختر مادة لفتح الدروس وكروت المراجعة والاختبارات المرتبطة بالمراجع الأصلية.</p><div class="stats"><div class="stat"><strong>2</strong><span id="subjectsLabel">مواد</span></div><div class="stat"><strong>7</strong><span id="filesLabel">ملفات مصدر</span></div><div class="stat"><strong>22</strong><span id="lessonsLabel">درسًا</span></div></div></div><div class="hero-art" aria-hidden="true"><div class="scan-figure"><span class="scan-ray"></span><span class="scan-core"></span></div></div></section>
+<section class="quiz-panel" style="margin-top:22px;padding:0"><article class="index-subject"><div><h2>تصوير الأوعية</h2><p>Angiography · 4 presentations · 13 lessons</p><span class="subject-chip">كروت مراجعة: 69 كارت</span></div><div class="subject-tag">تقنيات تصوير تداخلي</div><a class="open-link" href="Angiography/angiography.html">افتح المادة <span aria-hidden="true">←</span></a></article><article class="index-subject"><div><h2>فيزياء التصوير المقطعي</h2><p>CT Physics · 1 presentation + 2 PDFs · 9 lessons</p><span class="subject-chip">كروت مراجعة: 42 كارت</span></div><div class="subject-tag">تكوين الأشعة والكواشف</div><a class="open-link" href="CT Physics/ct-physics.html">افتح المادة <span aria-hidden="true">←</span></a></article></section>
 <section class="import-box"><h3 id="importTitle">ملخص التقدم من ملفات النسخ الاحتياطية</h3><p id="importHint">يمكن استيراد ملفات JSON المُصدّرة من تطبيقات المواد لعرض ملخص التقدم هنا. التقدم محفوظ محليًا داخل كل تطبيق.</p><label class="secondary" for="snapshotFiles" id="snapshotLabel">استيراد ملفات JSON</label><input id="snapshotFiles" type="file" accept="application/json,.json" multiple hidden><div id="importResults" class="import-results"></div></section>
-<div class="notice info" id="offlineNote">التطبيقات تعمل محليًا دون إعداد API خارجي. كل الأسئلة اختيار من متعدد وبالإنجليزية، وتُصحح آليًا.</div><div class="notice" id="limitNote">النصوص المستخرجة مرتبطة بملفاتها. ملفات PowerPoint القديمة تعرض كتلًا نصية دون رقم شريحة، وقد لا تظهر الرسوم أو النص داخل الصور.</div><p class="footer">Original materials were copied into their subject folders. Source files in F:\Radiology remain unchanged.</p></main>
+<div class="notice info" id="offlineNote">التطبيقات تعمل محليًا دون إعداد API خارجي. كل الأسئلة اختيار من متعدد وبالإنجليزية، وتُصحح آليًا — وفي كل مادة وضع كروت مراجعة للاستذكار.</div><div class="notice" id="limitNote">النصوص المستخرجة مرتبطة بملفاتها. ملفات PowerPoint القديمة تعرض كتلًا نصية دون رقم شريحة، وقد لا تظهر الرسوم أو النص داخل الصور.</div><p class="footer">Original materials were copied into their subject folders. Source files in F:\Radiology remain unchanged.</p></main>
 <script>
-const strings={ar:{lang:'English',eyebrow:'نظام تعلّم مبني على ملفاتك',title:'مكتبة مواد الفصل الأول',intro:'اختر مادة لفتح الدروس والمقتطفات والاختبارات المرتبطة بالمراجع الأصلية.',subjects:'مواد',files:'ملفات مصدر',lessons:'درسًا',open:'افتح المادة',importTitle:'ملخص التقدم من ملفات النسخ الاحتياطية',importHint:'يمكن استيراد ملفات JSON المُصدّرة من تطبيقات المواد لعرض ملخص التقدم هنا. التقدم محفوظ محليًا داخل كل تطبيق.',snapshot:'استيراد ملفات JSON',offline:'التطبيقات تعمل محليًا دون إعداد API خارجي. كل الأسئلة اختيار من متعدد وبالإنجليزية، وتُصحح آليًا.',limit:'النصوص المستخرجة مرتبطة بملفاتها. ملفات PowerPoint القديمة تعرض كتلًا نصية دون رقم شريحة، وقد لا تظهر الرسوم أو النص داخل الصور.',all:'كل المواد',invalid:'ملف غير صالح أو غير مدعوم.',imported:'تم استيراد ملخصات التقدم.'},en:{lang:'العربية',eyebrow:'A study system built from your files',title:'First-term subject library',intro:'Choose a subject to open lessons, source excerpts and quizzes linked to the original references.',subjects:'Subjects',files:'Source files',lessons:'Lessons',open:'Open subject',importTitle:'Progress summary from backups',importHint:'Import JSON exports from subject apps to view progress here. Each app also keeps progress locally in its browser.',snapshot:'Import JSON files',offline:'The apps run locally with no external API configured. All questions are English multiple-choice items and are graded automatically.',limit:'Extracted text links back to its files. Legacy PowerPoint decks show text blocks without slide numbers, and diagrams or image-only text may be missing.',all:'All subjects',invalid:'A file is invalid or unsupported.',imported:'Progress summaries imported.'}};let lang='ar';const $=s=>document.querySelector(s);const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const strings={ar:{lang:'English',eyebrow:'نظام تعلّم مبني على ملفاتك',title:'مكتبة مواد الفصل الأول',intro:'اختر مادة لفتح الدروس وكروت المراجعة والاختبارات المرتبطة بالمراجع الأصلية.',subjects:'مواد',files:'ملفات مصدر',lessons:'درسًا',open:'افتح المادة',importTitle:'ملخص التقدم من ملفات النسخ الاحتياطية',importHint:'يمكن استيراد ملفات JSON المُصدّرة من تطبيقات المواد لعرض ملخص التقدم هنا. التقدم محفوظ محليًا داخل كل تطبيق.',snapshot:'استيراد ملفات JSON',offline:'التطبيقات تعمل محليًا دون إعداد API خارجي. كل الأسئلة اختيار من متعدد وبالإنجليزية، وتُصحح آليًا — وفي كل مادة وضع كروت مراجعة للاستذكار.',limit:'النصوص المستخرجة مرتبطة بملفاتها. ملفات PowerPoint القديمة تعرض كتلًا نصية دون رقم شريحة، وقد لا تظهر الرسوم أو النص داخل الصور.',all:'كل المواد',invalid:'ملف غير صالح أو غير مدعوم.',imported:'تم استيراد ملخصات التقدم.'},en:{lang:'العربية',eyebrow:'A study system built from your files',title:'First-term subject library',intro:'Choose a subject to open lessons, flashcards and quizzes linked to the original references.',subjects:'Subjects',files:'Source files',lessons:'Lessons',open:'Open subject',importTitle:'Progress summary from backups',importHint:'Import JSON exports from subject apps to view progress here. Each app also keeps progress locally in its browser.',snapshot:'Import JSON files',offline:'The apps run locally with no external API configured. All questions are English multiple-choice items graded automatically — each subject also has a flashcards review mode.',limit:'Extracted text links back to its files. Legacy PowerPoint decks show text blocks without slide numbers, and diagrams or image-only text may be missing.',all:'All subjects',invalid:'A file is invalid or unsupported.',imported:'Progress summaries imported.'}};let lang='ar';const $=s=>document.querySelector(s);const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 $('#languageBtn').onclick=()=>{lang=lang==='ar'?'en':'ar';document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';$('#languageBtn').textContent=strings[lang].lang;for(const [id,key] of [['eyebrow','eyebrow'],['title','title'],['intro','intro'],['subjectsLabel','subjects'],['filesLabel','files'],['lessonsLabel','lessons'],['importTitle','importTitle'],['importHint','importHint'],['snapshotLabel','snapshot'],['offlineNote','offline'],['limitNote','limit']])$('#'+id).textContent=strings[lang][key];document.querySelectorAll('.open-link').forEach(a=>a.firstChild.textContent=strings[lang].open+' ')};
 $('#snapshotFiles').onchange=async e=>{const files=[...e.target.files||[]],out=[];for(const f of files){try{if(f.size>1000000)throw 0;const x=JSON.parse(await f.text());if(x.version!==1||!x.subject||!x.attempts||typeof x.attempts!=='object')throw 0;const count=Object.keys(x.attempts).length;const mastered=Object.values(x.mastery||{}).filter(m=>m&&m.pct>=80).length;const name=x.subject==='angiography'?'Angiography':x.subject==='ct-physics'?'CT Physics':x.subject;out.push({name,count,mastered,ok:true})}catch(_){out.push({name:f.name,ok:false})}}$('#importResults').innerHTML=out.map(x=>`<div class="import-item"><span>${esc(x.name)}</span><strong>${x.ok?`${x.count} reviewed · ${x.mastered} mastered`:esc(strings[lang].invalid)}</strong></div>`).join('');e.target.value=''};
 </script></body></html>
