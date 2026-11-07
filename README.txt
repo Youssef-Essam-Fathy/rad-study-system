@@ -14,8 +14,8 @@ Flashcards review mode
 - Card progress stays in the browser and is not part of the lesson progress JSON export.
 
 Midterm bank and focus mode
-- The Angiography app embeds the real midterm question bank (240 multiple-choice and true/false items from the user's PDF) distributed across the 13 lessons.
-- Each lesson has a collapsed "Midterm question bank" section intended for self-testing after studying the lesson.
+- The subject apps embed the real midterm question banks from the user's PDFs: Angiography ships 240 multiple-choice and true/false items across all 13 lessons; CT Physics ships 45 multiple-choice items covering the overview, tube, detection, penetration and range lessons.
+- Each covered lesson has a collapsed "Midterm question bank" section intended for self-testing after studying the lesson.
 - Focus mode lets the student pick a duration (10-60 minutes) and study one lesson behind a full-screen timer; the timer persists across page reloads and cannot be dismissed until it finishes.
 
 Accuracy and grading limits
