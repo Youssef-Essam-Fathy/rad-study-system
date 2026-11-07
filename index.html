@@ -78,7 +78,19 @@ img{max-width:100%}
 .evidence-wrap summary{cursor:pointer;color:var(--teal-strong);font-weight:600;font-size:.9rem;padding:8px 0}
 .evidence{background:var(--teal-softer);border:1px solid #d3e8e3;border-inline-start:4px solid var(--teal);padding:13px 15px;margin:10px 0;line-height:1.65;border-radius:var(--radius-sm)}
 .evidence cite{display:block;color:var(--muted);font-size:.74rem;font-style:normal;margin-bottom:6px;direction:ltr;text-align:left}
-.evidence>p{margin:0;max-width:90ch;font-size:.9rem;direction:ltr;text-align:left}
+.en-lines{display:grid;gap:4px;direction:ltr;text-align:left}
+.en-line{display:flex;gap:10px;align-items:flex-start;padding:7px 10px;margin:0;border-radius:9px;transition:background .15s}
+.en-line:hover{background:rgba(15,145,135,.08)}
+.en-line .ln{flex:none;width:21px;height:21px;border-radius:50%;background:var(--teal-soft);color:var(--teal-strong);font-size:.66rem;font-weight:700;display:grid;place-items:center;margin-top:2px;font-variant-numeric:tabular-nums}
+.en-line .lt{font-size:.9rem;line-height:1.75;color:#33474f;max-width:88ch}
+.evidence-wrap[open] .en-line,.evidence-wrap[open] .evidence .egyptian-note{animation:lineIn .5s cubic-bezier(.2,.7,.3,1) backwards;animation-delay:calc(var(--i,0)*70ms)}
+.evidence-wrap[open] .evidence .egyptian-note{--i:13}
+@keyframes lineIn{from{opacity:0;transform:translateY(8px)}}
+mark.tm{padding:1px 5px;border-radius:5px;font-weight:600}
+mark.tm.t1{background:#d5efe9;color:#0a756c}
+mark.tm.t2{background:#fdeec9;color:#8a5d18}
+mark.tm.t3{background:#eadff5;color:#6b3fa0}
+mark.tm.t4{background:#dbe9f7;color:#2b5d9c}
 .egyptian-note{margin-top:12px;padding:11px 13px;background:var(--amber-soft);border:1px solid #ecd9ac;border-inline-start:4px solid var(--amber);color:#41372c;direction:rtl;text-align:right;border-radius:9px}
 .egyptian-note strong{display:block;color:var(--amber-ink);font-size:.74rem;letter-spacing:.02em;margin-bottom:4px}
 .egyptian-note p{direction:rtl;text-align:right;font-size:.92rem;line-height:1.75;margin:0}
@@ -154,6 +166,7 @@ form.ltr .check-row{direction:ltr}
 .fc-front .fc-text{font-weight:600;color:var(--text)}
 .fc-back .fc-text{color:#f0f9f7}
 .fc-back .fc-en{direction:ltr;margin-top:4px;padding-top:10px;border-top:1px solid rgba(255,255,255,.16);font-size:.9rem;font-weight:600;color:#cfe9e3;max-width:56ch}
+.fc-back .fc-text{margin-bottom:2px}
 .fc-hint{margin:0;font-size:.76rem;color:var(--muted);position:absolute;bottom:12px;inset-inline-start:0;inset-inline-end:0;text-align:center}
 .fc-back .fc-hint{color:#9fc4bc}
 .fc-lesson{font-size:.74rem;color:var(--muted);text-align:center;margin:8px 0 0}
@@ -182,9 +195,18 @@ form.ltr .check-row{direction:ltr}
 body.focus-mode{overflow:hidden}
 #focusOverlay{position:fixed;inset:0;z-index:100;background:var(--paper);overflow:auto}
 #focusOverlay[hidden]{display:none}
-.focus-top{position:sticky;top:0;z-index:2;background:var(--ink);color:#eaf5f3;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 22px}
+.focus-top{position:sticky;top:0;z-index:2;background:var(--ink);color:#eaf5f3;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 20px;flex-wrap:wrap}
 .focus-top .eyebrow{margin:0 0 4px;color:#9fd8cf}
 .focus-clock{font-size:2rem;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:.02em;line-height:1}
+.focus-nav{display:flex;gap:8px;align-items:center}
+.focus-nav-btn,.focus-end{border:1px solid rgba(255,255,255,.25);background:transparent;color:#eaf5f3;min-height:44px;display:inline-flex;align-items:center;justify-content:center;transition:background .15s,opacity .15s}
+.focus-nav-btn{width:44px;border-radius:50%;font-size:1.1rem}
+.focus-nav-btn:hover{background:rgba(255,255,255,.12)}
+.focus-nav-btn:disabled{opacity:.35;cursor:default;background:transparent}
+.focus-end{border-radius:999px;padding:0 16px;font-size:.8rem;font-weight:600;color:#ffc9bd;border-color:rgba(255,150,130,.45);gap:6px}
+.focus-end:hover{background:rgba(207,92,74,.2)}
+.focus-end:disabled{opacity:.35}
+.focus-center{text-align:center;flex:1;min-width:0}
 .focus-progress{position:sticky;top:74px;z-index:2;height:5px;background:rgba(14,27,36,.12)}
 .focus-progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--teal),#7fd8c9)}
 .focus-body{max-width:920px;margin:0 auto;padding:18px 16px 60px}
