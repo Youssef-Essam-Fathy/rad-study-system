@@ -5,6 +5,8 @@ Open index.html in a modern browser. The subject apps work as standalone HTML fi
 Subjects detected from file contents
 - Angiography: basic technique, cerebral, coronary and renal angiography presentations.
 - CT Physics: CT introduction, X-ray production, detector conversion, penetration and photon range.
+- CT Technique: foundations, brain, abdomen-pelvis, renal imaging and paranasal-sinus technique presentations.
+- Nuclear Medicine: thyroid scintigraphy (parts 1-2) and bone scintigraphy (parts 1-2).
 
 Each subject folder contains an HTML app, source visuals, and copies of its original source files. Originals on F: were not edited or moved. Progress is stored in browser local storage and can be exported/imported as JSON.
 
@@ -14,9 +16,9 @@ Flashcards review mode
 - Card progress stays in the browser and is not part of the lesson progress JSON export.
 
 Midterm bank and focus mode
-- The subject apps embed the real midterm question banks from the user's PDFs: Angiography ships 240 multiple-choice and true/false items across all 13 lessons; CT Physics ships 45 multiple-choice items covering the overview, tube, detection, penetration and range lessons.
+- The subject apps embed midterm question banks: Angiography ships the real 240-item exam-bank PDF across all 13 lessons; CT Physics ships the 45-item PDF bank; CT Technique and Nuclear Medicine ship banks authored from the lecture sources themselves (about 30 and 27 items).
 - Each covered lesson has a collapsed "Midterm question bank" section intended for self-testing after studying the lesson.
-- Focus mode lets the student pick a duration (10-60 minutes) and study one lesson behind a full-screen timer; the timer persists across page reloads and cannot be dismissed until it finishes.
+- Focus mode lets the student pick a duration (10-60 minutes) and study behind a full-screen timer: lessons are navigable with arrows, flashcards are reachable through the Cards button, and the session can be ended early with the minutes counted.
 
 Accuracy and grading limits
 - Lessons are presented in Arabic; every assessment question, option, answer explanation, and feedback label is in English.
