@@ -136,6 +136,40 @@
       "lessons": 9,
       "questionFormat": "multiple choice only",
       "sourceVisuals": 101
+    },
+    {
+      "subject": "CT Anatomy",
+      "file": "1.introduction of CT Anatomy.pptx",
+      "source": "F:\\Radiology\\AAAAعلوم طبية\\3rd year\\First term\\CT Anatomy\\1.introduction of CT Anatomy.pptx",
+      "copy": "C:\\Users\\Youss\\.codex\\.chatgpt-projects\\g-p-6ad89b56892881918da341a7666a20da\\Study System\\CT Anatomy\\Originals\\1.introduction of CT Anatomy.pptx",
+      "bytes": 1869894
+    },
+    {
+      "subject": "CT Anatomy",
+      "file": "2.BRAIN.pdf",
+      "source": "F:\\Radiology\\AAAAعلوم طبية\\3rd year\\First term\\CT Anatomy\\2.BRAIN.pdf",
+      "copy": "C:\\Users\\Youss\\.codex\\.chatgpt-projects\\g-p-6ad89b56892881918da341a7666a20da\\Study System\\CT Anatomy\\Originals\\2.BRAIN.pdf",
+      "bytes": 4307926
+    },
+    {
+      "subject": "CT Anatomy",
+      "file": "5.CT Lung Anatomy P 1.pptx",
+      "source": "F:\\Radiology\\AAAAعلوم طبية\\3rd year\\First term\\CT Anatomy\\5.CT Lung Anatomy P 1.pptx",
+      "copy": "C:\\Users\\Youss\\.codex\\.chatgpt-projects\\g-p-6ad89b56892881918da341a7666a20da\\Study System\\CT Anatomy\\Originals\\5.CT Lung Anatomy P 1.pptx",
+      "bytes": 1223956
+    },
+    {
+      "subject": "CT Anatomy",
+      "file": "6.CT Lung Anatomy P 2 .pdf",
+      "source": "F:\\Radiology\\AAAAعلوم طبية\\3rd year\\First term\\CT Anatomy\\6.CT Lung Anatomy P 2 .pdf",
+      "copy": "C:\\Users\\Youss\\.codex\\.chatgpt-projects\\g-p-6ad89b56892881918da341a7666a20da\\Study System\\CT Anatomy\\Originals\\6.CT Lung Anatomy P 2 .pdf",
+      "bytes": 628389
+    },
+    {
+      "subject": "CT Anatomy",
+      "lessons": 12,
+      "questionFormat": "multiple choice only",
+      "sourceVisuals": 128
     }
   ]
 }
